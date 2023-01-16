@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/format.css">
+    <script src="../js/utilities.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="insert-nav">
+</div>
+
+<div class="container-fluid">
+    <div class="row extra-gradient-pink mb-5 text-center extra-py-10 text-light extra-py-10">
+        <h3>Our Programming Courses</h3>
+        <h5>Get to know the most widely used programming languages</h5>
+    </div>
+</div>
+
+<div class="container-fluid text-light px-5 extra-wrapper">
+
+    <div class="row my-3 text-center">
+        <h3>Available now</h3>
+    </div>
+
+    <div class="row d-flex flex-wrap gy-4 mb-5 justify-content-center">
+        <div class="col-lg-3 shadow d-flex" onclick="redirect('c/')">
+            <div class="extra-bg-generic rounded-3 p-2 w-100 extra-clickable">
+                <h4 class="fw-bolder">
+                    C
+                </h4>
+                A minimalistic procedural programming language designed with the intention of being a lightweight,
+                low-level language for writing operating systems.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row my-3 text-center">
+        <h3>Comming soon ..</h3>
+    </div>
+
+    <div class="row d-flex flex-wrap gy-4 justify-content-center">
+        <div class="col-lg-3 shadow d-flex">
+            <div class="extra-bg-lighter-dark rounded-3 p-2 w-100">
+                <h4 class="fw-bolder">
+                    JavaScript
+                </h4>
+                A modern programming language, that dominates the web development industry.
+            </div>
+        </div>
+
+        <div class="col-lg-3 shadow d-flex">
+            <div class="extra-bg-lighter-dark rounded-3 p-2 w-100">
+                <h4 class="fw-bolder">
+                    Java
+                </h4>
+                An Object-Oriented, beginner-friendly, yet feature rich cross-platform language widely used for
+                enterprise web development.
+            </div>
+        </div>
+
+        <div class="col-lg-3 shadow d-flex">
+            <div class="extra-bg-lighter-dark rounded-3 p-2 w-100">
+                <h4 class="fw-bolder">
+                    Kotlin
+                </h4>
+                A modern language created with the intention of extending the java language, yet maintain compatibility
+                with an already existing codebase.
+                It is the language of choice for many developers of mobile applications.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="insert-footer">
+</div>
+
+<script>
+    const page = {
+        'nav': 'Courses',
+        'title': 'Programming Courses',
+        'relative_root': '..'
+    };
+    loadEverything(page)
+</script>
+
+</body>
+</html>

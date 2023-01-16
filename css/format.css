@@ -1,0 +1,168 @@
+/* Pallet: https://colorhunt.co/palette/232931393e464ecca3eeeeee */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #232931 !important;
+}
+
+.extra-wrapper {
+    min-height: 100vh;
+}
+
+.extra-bg-dark {
+    background-color: #232931;
+}
+
+.extra-bg-footer {
+    background-color: #1c1f23;
+}
+
+.extra-bg-darker {
+    background-color: #25292a;
+}
+
+.extra-bg-lighter-dark {
+    background-color: #393E46;
+}
+
+.extra-bg-accent {
+    background-color: #009432;
+}
+
+[class^="extra-bg-"] {
+    transition: background-color .15s;
+}
+
+.extra-bg-accent:hover {
+    background-color: #0ab443;
+}
+
+.extra-bg-dim-accent {
+    background-color: #16a085;
+}
+
+.extra-bg-dim-accent:hover {
+    background-color: #24bea0;
+}
+
+.extra-bg-blue {
+    background-color: #4834d4;
+}
+
+.extra-bg-blue:hover {
+    background-color: #5a47e5;
+}
+
+.extra-bg-purple {
+    background-color: #7158e2;
+}
+
+.extra-bg-purple:hover {
+    background-color: #846cf1;
+}
+
+.extra-clickable {
+    cursor: pointer;
+}
+
+.regular-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+.bold-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+
+.large-text {
+    font-size: 30px;
+}
+
+.extra-gradient-pink {
+    background: linear-gradient(227deg, #ee196d, #3b5cea, #e026d8);
+    background-size: 600% 600%;
+    animation: ExtraGradient 30s ease infinite;
+}
+
+.extra-gradient-green {
+    background: linear-gradient(270deg, #1eaa12, #1272aa);
+    background-size: 200% 200%;
+    animation: ExtraGradient 30s ease infinite;
+}
+
+@keyframes ExtraGradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.extra-py-a-lot {
+    padding-top: 28rem;
+    padding-bottom: 28rem;
+}
+
+.extra-bg-generic {
+    background-color: #34495e;
+}
+
+.extra-bg-generic:hover {
+    background-color: #516c88;
+}
+
+.extra-head-fixed-dim {
+    height: 45vh !important;
+}
+
+.extra-underlining-border {
+    border-bottom: 2px dashed #464b54;
+}
+
+.extra-text-brighter-force {
+    color: #ececec !important;
+}
+
+.extra-sidebar {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+.extra-sidebar > ul {
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.extra-sidebar-entry {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    display: block;
+    transition: .1s ease-in-out;
+}
+
+.extra-sidebar-entry-highlightable:hover {
+    background-color: #34393a;
+    cursor: pointer
+}
+
+.extra-top-shadow {
+    box-shadow: -2px -1px 20px 0px rgba(0,0,0,0.75);
+}
+
+.extra-py-10 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}

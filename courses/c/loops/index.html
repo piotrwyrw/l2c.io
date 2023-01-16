@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../css/format.css">
+    <script src="../../../js/utilities.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</head>
+<body>
+
+<div id="insert-nav">
+</div>
+
+<div class="container-fluid text-light m-0 p-0">
+    <div class="row g-0">
+        <div class="col-lg-2 p-0 extra-wrapper shadow order-2 order-lg-1" id="insert-sidebar">
+            <!--- The sidebar will be inserted here --->
+        </div>
+        <div class="col-lg-10 order-1 order-lg-2 extra-bg-lighter-dark">
+            <div class="container-fluid">
+                <div class="row extra-gradient-green text-center text-light py-5 shadow">
+                    <h3>Loops</h3>
+                    <h5>ANSI C Programming Course</h5>
+                </div>
+                <div class="row mx-5">
+                    <div class="py-5">
+                        <h4>Loops</h4>
+                        The C programming language offers two main types of loops, which are the <code>for</code> and
+                        <code>while</code> loops.
+                        <br>
+                        The behaviour and syntax of these loops is (in most cases) directly compatible with other
+                        languages of the C family, such as
+                        Java or C++.
+                        <br>
+                        As a refresher, the <code>while</code> loop will keep repeating the enclosed code block for as
+                        long as the condition evaluates to <code>true</code>.
+                        The <code>for</code> loop has a slightly more complicated syntax. The statement accepts three
+                        expressions, which may be a variable declaration,
+                        a variable value check, and a variable increment/decrement for the most commonly used loop:
+                        <pre class="py-3"><code class="language-c" id="cs-1"></code></pre>
+                        Even if the loop is seemingly endless according to the condition(s) in the statement, you may still
+                        forcibly break out of that loop at any point using the <code>break</code> statement. You may also skip one iteration
+                        of the loop at will, using <code>continue</code>.
+                        <pre class="py-3"><code class="language-c" id="cs-2"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="insert-footer">
+    <!--- The footer will be inserted here --->
+</div>
+
+<script>
+    const page = {
+        "nav": null,
+        'title': 'Loops',
+        'relative_root': '../../..',
+        'sidebar': 'Loops'
+    };
+    loadEverything(page)
+    loadSidebar(page)
+
+    loadElement('cs1.c', 'cs-1')
+        .then((res) => {
+            hljs.highlightAll()
+        })
+
+    loadElement('cs2.c', 'cs-2')
+        .then((res) => {
+            hljs.highlightAll()
+        })
+
+
+</script>
+
+</body>
+</html>
