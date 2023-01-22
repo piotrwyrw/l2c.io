@@ -28,7 +28,7 @@ const loadSidebar = (page) => {
         })
 }
 
-const loadFooter = (page) => loadElement(`${page['relative_root']}/footer.html`, 'insert-footer');
+const loadFooter = (page) => loadElement(`${page['relative_root']}/footer.html`, 'insert-footer').then((res) => navPrep(page));
 
 const navPrep = (page) => {
 

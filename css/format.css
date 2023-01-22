@@ -8,6 +8,7 @@
 
 body {
     background-color: #232931 !important;
+    min-height: 100vh;
 }
 
 .extra-wrapper {
@@ -54,9 +55,9 @@ body {
     background-color: #4834d4;
 }
 
-.extra-bg-blue:hover {
-    background-color: #5a47e5;
-}
+/*.extra-bg-blue:hover {*/
+/*    background-color: #5a47e5;*/
+/*}*/
 
 .extra-bg-purple {
     background-color: #7158e2;
@@ -109,8 +110,8 @@ body {
 }
 
 .extra-py-a-lot {
-    padding-top: 28rem;
-    padding-bottom: 28rem;
+    padding-top: 25rem;
+    padding-bottom: 25rem;
 }
 
 .extra-bg-generic {
@@ -165,4 +166,13 @@ body {
 .extra-py-10 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+}
+
+.footer-col > h6 {
+    font-weight: bold;
+}
+
+.extra-pleasant-link {
+    color: gray;
+    text-decoration: none;
 }
